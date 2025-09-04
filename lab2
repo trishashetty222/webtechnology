@@ -1,102 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+<h1>4MW23CS176 Trisha S Shetty</h1>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Time Table</title>
-<style>
-table {
-       width:100%;
-       border-collapse: collapse;
-       text-align: center;
-}
-th,td {
-       border:1px solid black;
-        padding 10px;
-}
-th {
-      background-color:#2f2f2;
-}
-     tr:nth-child(even){
-    background-color:#f9f9f9;
-}
-    tr:nth-child(odd){
-    background-color:#e8f5e9;
-}
-.lab {
-background-color:#ffeb3b;
-}
-.elective {
-background-color:#ffcebc;
-}
-tfoot{
-background-color:#cfdsde;
-font-weight:bold;
-}
-</style>
+     <meta charset ="UTF-8" >
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title> Time Table </title>
+   <style>
+   table{
+      width:100%;
+      border-collapse:collapse;
+      text-align:center;
+   }
+   th,td{
+     border:1px solid black;
+     padding:10px;
+   }
+   th{
+     background-color:#f2f2f2;
+      }
+      tr:nth-child(even){
+      background-color:#f9f9f9;
+      }
+      tr:nth-child(odd){
+      background-color:#e8f5e9;
+      }
+      .lab{
+      background-color:#ffeb3b;
+      }
+      .elective{
+      background-color:#ffccbc;
+      }
+      tfoot{
+       background-color:#efd8dc;
+       font-weight:bold;
+      }
+   </style>
+
 </head>
 <body>
-<h1>class time table</h1>
-  <table>
-<thead>
-<tr>
-<th rowspan="2">Day</th>
-<th colspan="5">Subject time</th>
+   <h1> Class Time Table</h1>
+   <table>
+   <thead>
+   <tr>
+      <th rowspan="2">Day</th>
+      <th colspan="5">Subject/Time</th>
+   </tr>
+   <tr>
+     <th>9.00-10.00</th>
+     <th>10.00-11.00</th>
+     <th>11.00-12.00</th>
+     <th>1.00-2.00</th>
+     <th>2.00-3.00</th>
 </tr>
-<tr>
-<th>9:00-10:00</th>
-<th>10:00-11:00</th>
-<th>11:00-12:00</th>
-<th>1:00-2:00</th>
-<th>2:00-3:00</th>
-</tr>
-</head>
+</thead>
 <tbody>
-<td>Monday</td>
-<td>Maths</td>
-<td>physics</td>
-<td class="lab" colspan+"2">Physics lab</td>
-<td>english</td>
+<tr>
+   <td>Monday</td>
+   <td>Mathematics</td>
+   <td>Physics</td>
+   <td class="lab" colspan="2">Physics Lab</td>
+   <td>English</td>
 </tr>
 <tr>
-<td>Tuesday</td>
-<td>chemistry</td>
-<td>english</td>
-<td class="elective">elective-AI</td>
-<td>free period</td>
+   <td>Tuesday</td>
+   <td>Chemistry</td>
+   <td>Mathematics</td>
+   <td>English</td>
+   <td class="elective" >Elective-AI</td>
+   <td >Free period</td>
 </tr>
 <tr>
-<td>wednesday</td>
-<td class="elective" colspan="2">elective-machine learning</td>
-<td>chemistry</td>
-<td>english</td>
-<td class="lab">chemistry lab</td>
+   <td>Wednesday</td>
+   <td class="elective" colspan="2">Elective-Machine Learning</td>
+   <td>Chemistry</td>
+   <td>English</td>
+   <td class="lab">Chemistry Lab</td>
 </tr>
 <tr>
-<td>Thursday<?td>
-<td>maths</td>
-<td>physics</td>
-<td>computerScience</td>
-<td>chemistry</td>
-<td class="elective">elective-data science</td>
+   <td>Thursday</td>
+   <td>Mathematics</td>
+   <td>Computer Science</td>
+    <td>Chemistry</td>
+   <td class="elective" >Elective-Data Science</td>
+   <td >Free period</td>
 </tr>
 <tr>
-<td>Friday</td>
-<td>english</td>
-<td class="lab" colspan+"2">computer science lab</td>
-<td>physics</td>
-<td>chemistry</td>
+   <td>Friday</td>
+   <td>English</td>
+   <td class="lab" colspan="2">Computer Science Lab</td>
+   <td>Physics</td>
+   <td>Chemistry</td>
 </tr>
-</body>
+</tbody>
 <tfoot>
 <tr>
-<td colspan="6">NOTE:Lab sessions and electives are highlighted with different colors</td>
+<td colspan="6">Note:Lab sessions and electives are highlighted with different colors.</td>
 </tr>
 </tfoot>
 </table>
-</body>
-</html>
-
-
-
-
+</body
