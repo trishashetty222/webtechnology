@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Styled page Example</title>
+<link rel="Stylesheet1" href="style1.css">
+<link rel="Stylesheet2" href="style1.css">
+<link rel="Stylesheet3" href="style1.css">
+<link rel="Stylesheet4" href="style1.css">
+<link rel="No Stylesheet" href="style1.css">
+</head>
+<body>
+<div id="container">
+<h2>Welcome to my homepage</h2>
+<hr>
+<h3>use menu to select different Stylesheets</h3>
+<h4>Same page Different Stylesheets.</h4>
+<p>This is a demonstration of how different stylesheets can change the layout of your HTML page.you can change by selecting different stylesheets.</p>
+<h5>No styles</h5>
+<p>This page use div elements to group different section of html page. Click here to see how the page looks like with no style sheet.</p>
+<p>No stylesheet</p>
+<h6>SIDE-BAR</h6>
+<p class="highlight">This is a paragraph that tells about the stylesheet pages.</p>
+<button onclick="setstyle('Style 1')">Stylesheet1</button>
+<button onclick="setstyle('Style 1')">Stylesheet2</button>
+<button onclick="setstyle('Style 1')">Stylesheet3</button>
+<button onclick="setstyle('Style 1')">Stylesheet4</button>
+<button onclick="setstyle('Style 1')">No Stylesheet</button>
+<div>
+</body>
+</html>
+
+
+  style1.css
+  body {
+  background-color: #ffffff;
+  color: #333;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #336699;
+}
+
+.highlight {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-left: 4px solid #336699;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+}
