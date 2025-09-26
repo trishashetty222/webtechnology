@@ -1,0 +1,9 @@
+body {
+  background-color: #fff0e6;
+  color: #663300;
+  font-family: Verdana, sans-serif;
+}
+h2 { color: #ff6600; text-align: center; }
+.highlight { background-color: #ffd9b3; border: 2px solid #ff6600; padding: 10px; }
+a { color: #cc3300; }
+button { background-color: #ff6600; color: white; padding: 10px; border-radius: 8px; margin: 5px; }
