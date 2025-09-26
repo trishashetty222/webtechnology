@@ -1,0 +1,9 @@
+body {
+  background-color: #f3e6ff;
+  color: #33004d;
+  font-family: "Tahoma", sans-serif;
+}
+h2 { color: #6600cc; text-align: left; }
+.highlight { background-color: #d9b3ff; border: 2px dashed #6600cc; padding: 10px; }
+a { color: #9900ff; }
+button { background-color: #6600cc; color: white; padding: 10px; border-radius: 8px; margin: 5px; }
