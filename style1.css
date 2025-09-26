@@ -1,0 +1,9 @@
+body {
+  background-color: #e6f0ff;
+  color: #003366;
+  font-family: Arial, sans-serif;
+}
+h2 { color: #004080; text-align: center; }
+.highlight { background-color: #cce0ff; border: 2px dashed #004080; padding: 10px; }
+a { color: #0040ff; }
+button { background-color: #004080; color: white; padding: 10px; border-radius: 8px; margin: 5px; }
