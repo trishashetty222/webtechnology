@@ -1,0 +1,9 @@
+body {
+  background-color: #1c1c1c;
+  color: #d4ffd4;
+  font-family: "Courier New", monospace;
+}
+h2 { color: #00cc66; text-transform: uppercase; }
+.highlight { background-color: #003322; border: 2px dotted #00cc66; padding: 10px; }
+a { color: #66ff99; }
+button { background-color: #00cc66; color: black; padding: 10px; border-radius: 8px; margin: 5px; }
