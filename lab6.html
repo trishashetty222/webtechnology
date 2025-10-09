@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Calculator</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .calculator {
+      background: #111827;
+      border-radius: 20px;
+      padding: 25px;
+      width: 320px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    }
+
+    .display {
+      background: #000;
+      color: #0ff;
+      border-radius: 10px;
+      text-align: right;
+      font-size: 30px;
+      padding: 15px;
+      margin-bottom: 20px;
+      height: 60px;
+      overflow: hidden;
+      box-shadow: inset 0 0 10px #0ff;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    button {
+      background: #0ff;
+      border: none;
+      padding: 14px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      color: #111;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #00bcd4;
+      transform: scale(1.05);
+    }
+
+    .op {
+      background: #00bcd4;
+    }
+
+    .equal {
+      background: #34d399;
+      grid-column: span 2;
+    }
+
+    .clear {
+      background: #f43f5e;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div id="display" class="display">0</div>
+
+    <div class="buttons">
+      <button class="clear" onclick="clearDisplay()">C</button>
+      <button onclick="backspace()">⌫</button>
+      <button class="op" onclick="insert('%')">%</button>
+      <button class="op" onclick="insert('/')">÷</button>
+
+      <button onclick="insert('7')">7</button>
+      <button onclick="insert('8')">8</button>
+      <button onclick="insert('9')">9</button>
+      <button class="op" onclick="insert('*')">×</button>
+
+      <button onclick="insert('4')">4</button>
+      <button onclick="insert('5')">5</button>
+      <button onclick="insert('6')">6</button>
+      <button class="op" onclick="insert('-')">−</button>
+
+      <button onclick="insert('1')">1</button>
+      <button onclick="insert('2')">2</button>
+      <button onclick="insert('3')">3</button>
+      <button class="op" onclick="insert('+')">+</button>
+
+      <button onclick="insert('0')">0</button>
+      <button onclick="insert('.')">.</button>
+      <button class="op" onclick="power()">xʸ</button>
+      <button class="equal" onclick="calculate()">=</button>
+
+      <button class="op" onclick="square()">x²</button>
+      <button class="op" onclick="sqrt()">√</button>
+    </div>
+  </div>
+
+  <script>
+    const display = document.getElementById("display");
+
+    function insert(value) {
+      if (display.innerText === "0" || display.innerText === "Error") {
+        display.innerText = value;
+      } else {
+        display.innerText += value;
+      }
+    }
+
+    function clearDisplay() {
+      display.innerText = "0";
+    }
+
+    function backspace() {
+      display.innerText = display.innerText.slice(0, -1) || "0";
+    }
+
+    function calculate() {
+      try {
+        display.innerText = eval(display.innerText);
+      } catch {
+        display.innerText = "Error";
+      }
+    }
+
+    function power() {
+      const parts = display.innerText.split('^');
+      if (parts.length === 2) {
+        const base = parseFloat(parts[0]);
+        const exp = parseFloat(parts[1]);
+        display.innerText = Math.pow(base, exp);
+      } else {
+        display.innerText += '^';
+      }
+    }
+
+    function square() {
+      try {
+        const num = parseFloat(display.innerText);
+        display.innerText = num * num;
+      } catch {
+        display.innerText = "Error";
+      }
+    }
+
+    function sqrt() {
+      try {
+        const num = parseFloat(display.innerText);
+        display.innerText = Math.sqrt(num);
+      } catch {
+        display.innerText = "Error";
+      }
+    }
+  </script>
+</body>
+</html>
